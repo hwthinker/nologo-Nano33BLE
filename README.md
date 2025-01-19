@@ -23,8 +23,8 @@
 | 13          | LED_WS2812  | P0.13               |
 | 22          | LEDR        | P0.22               |
 | 23          | LEDG        | P0.23               |
-| 24          | LEDB        | P0.24               
-| Sensor tidak tersedia |
+| 24          | LEDB        | P0.24               | 
+| Sensor tidak tersedia | | |
 
 Dengan informasi ini, Anda dapat langsung mengacu ke port dan pin yang sesuai untuk debugging, optimasi, atau pemrograman langsung pada chip nRF52840.
 
@@ -90,16 +90,10 @@ void loop() {
 
 ![image-20250120062330734](./assets/image-20250120062330734.png)
 
-1. Build dan Upload Program:
+3. Compile  dan lihat hasilnya
+4. Bila berhasil maka pada LED WS2812B akan blinky dengan warna merah setiap 3 detik
 
-   ```
-   bash
-   pio run --target upload
-   ```
 
-2. Hasil:
-
-   - LED WS2812 di pin **P0.13** akan menyala warna merah selama 1 detik, lalu mati selama 1 detik, dan terus mengulangi siklus ini.test blinky LED RGB
 
 ## Contoh Blinky pada Built IN LED Port P0.13
 
